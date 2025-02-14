@@ -1,0 +1,136 @@
+/* Reset de estilos */
+* {
+    margin: 5;
+    padding: 5;
+    box-sizing: border-box;
+    font-family: "Times New Roman", sans-serif;
+}
+
+/* Estilo del body con fondo y animación de entrada */
+body {
+    background: linear-gradient(to right, #e3f2fd, #bbdefb); /* Fondo en degradado azul claro */
+    color: #333;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Encabezado con animación */
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    animation: slideDown 5s ease-out;
+}
+
+/* Animación del encabezado */
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+/* Botón animado */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #0056b3;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Contenedor de imágenes en dos filas de cinco */
+.contenedor-imagenes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+    grid-template-rows: repeat(2, auto);  /* 2 filas */
+    gap: 20px; /* Espacio entre imágenes */
+    text-align: center;
+    padding: 20px;
+    justify-items: center; /* Centra las imágenes dentro del grid */
+}
+
+/* Estilos para cada imagen */
+.imagen-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-item img {
+    width: 100%;
+    max-width: 150px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 15px; /* Esquinas redondeadas (opcional) */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra (opcional) */
+}
+
+.imagen-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Pie de página */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}

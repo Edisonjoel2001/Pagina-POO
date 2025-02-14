@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Programación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Quiz de Programación</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="estructurada.html">Programación Estructurada</a></li>
+                <li><a href="poo.html">POO</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Responde estas preguntas sobre programación</h2>
+        <div id="quiz-container">
+            <p id="pregunta"></p>
+            <div id="opciones"></div>
+            <button id="siguiente" onclick="siguientePregunta()">Siguiente</button>
+        </div>
+        <p id="resultado"></p>
+        <div id="felicitaciones" style="display: none;">
+            <h2>¡Felicidades! Terminaste el quiz.</h2>
+            <img src="imagenes/4GIF.gif" alt="Felicidades">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Edison is Coding</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Orientada a Objetos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Programación Orientada a Objetos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Programacion Estructurada.html">Programación Estructurada</a></li>
+                <li><a href="Recursos Varios.html">Recursos Varios</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>¿Qué es la Programación Orientada a Objetos?</h2>
+            <p>La Programación Orientada a Objetos (POO) es un paradigma de programación basado en el concepto de "objetos", que encapsulan datos y comportamientos.</p>
+            <p>Asi mismo nos permite organizar el código en unidades lógicas y reutilizabes. Ademas ayuda a pensar en objetos en lugar de la lógica del programa</p>
+            <p>Tambien permite crear soluciones eficientes y previene el acceso no autorizado a los datos.</p>
+
+                    <img src="imagenes/POO.jpg" alt="Imagen de programación" width="300">
+
+        </section>
+
+        <section>
+            <h2>1. Definición de Clases</h2>
+            <p>Las Clases son plantillas que definen Atributos y el comportamiento de los objetos</p>
+                        <p>Tambien son modelos o abstracciones de la realidad, definen las variables, las propiedades, procedimientos y eventos de los objetos.</p>
+            <p>Ademas son como moldes o plantillas que contienen la definicion y eventos de entidades del mundo real, y son grupos de objetos similares.</p>
+
+            <img src="imagenes/clases.png" alt="Ejemplo de Clases y Objetos">
+
+            <h2> Definición de Objetos</h2>
+            <p>Los objetos son instancias de esas clases.</p>
+                        <p>Tambien son copias creadas a partir de una clase, ademas tienen los comportamientos de esas clases.</p>
+            <p>Tambien son instancias del mundo real, como un boligrafo, un computador portatil,etc. Tambien son llamadas instancias de clases</p>
+
+            <img src="imagenes/Objetos.jpg" alt="Ejemplo de Clases y Objetos">
+            <pre>
+                <code>
+// Ejemplo en Python
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+    def saludar(self):
+        print(f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años.")
+                </code>
+            </pre>
+
+        </section>
+
+        <section>
+            <h2>2. Definicion de  Herencia</h2>
+            <p>La herencia es un mecanismo que permite a una clase heredar propiedades y comporamientos de otra.</p>
+                <p>Herencia Simple: Se define una nueva clase a partir de la clase incial.</p>
+            <p>Herencia Multiple: Se define una nueva clase a partir de dos o mas clases iniciales.</p>
+
+        <img src="imagenes/Herencia.png" alt="Imagen de programación" width="300">
+
+            <h2>  Defincion de Encapsulación</h2>
+            <p>El encapsulamiento consiste en agrupar datos y metodos relacionados en una clase, y controlar el acceso a ellos.</p>
+                        <p>Con el encapsulamiento logramos proteger la integridad de los datos, ademas ocultar los valores o estados de un objeto.</p>
+            <p>Tambien evitamos el acceso directo a los datos y garatizar que a los datos solo se accedan a travez de servicios propuestos.</p>
+
+                <img src="imagenes/Encapsulamiento.jpg" alt="Imagen de programación" width="300">
+            <pre>
+                <code>
+// Ejemplo en Python
+class Estudiante(Persona):
+    def __init__(self, nombre, edad, carrera):
+        super().__init__(nombre, edad)
+        self.carrera = carrera
+                </code>
+            </pre>
+            <img src="imagenes/H y E.png" alt="Ejemplo de Herencia" width="200">
+        </section>
+
+        <section>
+            <h2>3. Polimorfismo</h2>
+            <p>El polimorfismo es la capacidad de que distintos objetos respondan de manera diferente a un mensaje.</p>
+                        <p>.Esto permite que se incorporen nuevas funciones y comportamientos sin alterar el código existente.</p>
+            <p>Asi mismo el polimorfismo permite crear código mas flexible y reutilizable, permite diseñar clases que se puedan adaptar a diferentes situaciones.</p>
+            <p>Nos permite escribir codigo mas eficiente y nos permite redefinir métodospara clases derivadas.</p>
+
+            <pre>
+                <code>
+// Ejemplo en Python
+class Ave:
+    def volar(self):
+        print("Esta ave puede volar.")
+
+class Pinguino(Ave):
+    def volar(self):
+        print("Los pingüinos no pueden volar.")
+                </code>
+            </pre>
+            <img src="imagenes/Polimorfismo.png" alt="Ejemplo de Polimorfismo">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Edison is Coding.</p>
+    </footer>
+</body>
+</html>
